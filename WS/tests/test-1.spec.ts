@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
+  //memo
   await page.goto('https://app.x-test2.5-now.com/login');
   await page.getByRole('textbox', { name: 'メールアドレス' }).click();
   await page.locator('div').filter({ hasText: '会社コード/ユーザーコードを使用 ⇨ ログイン' }).nth(1).click();
