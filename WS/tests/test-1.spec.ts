@@ -60,4 +60,5 @@ test('test', async ({ page }) => {
   await page.getByRole('option', { name: 'グループB-1-1-' }).click();
   await page.getByRole('button', { name: '登録', exact: true }).click();
   await page.goto('https://app.x-test2.5-now.com/groups/491fbd29-4ddc-48a9-88fd-928c9532a8f6');
-  await page.getByRole('button', { name: 'icon エリアB-1-1-1-' }).click();
+    await page.getByRole('button', { name: 'icon エリアB-1-1-1-' }).click();
+  });
